@@ -4,14 +4,21 @@ import { PrimaryButton } from "../atoms/button/PrimaryButton";
 
 export const SearchInput = () => {
 	return (
-		<div>
+		<SContainer>
 			<Input placeholder="検索条件を入力" />
-			<PrimaryButton>検索</PrimaryButton>
-		</div>
+			<SButtonWrapper>
+				<PrimaryButton>検索</PrimaryButton>
+			</SButtonWrapper>
+		</SContainer>
 	);
 };
 
 const SContainer = styled.div`
 	display: flex;
-	
+	align-items: center;
+	justify-content: center;
+`;
+
+const SButtonWrapper = styled.div`
+	padding-left: 8px;
 `
