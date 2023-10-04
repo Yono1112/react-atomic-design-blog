@@ -5,9 +5,9 @@ import { UserCard } from "../organisms/user/UserCard";
 const users = [...Array(10).keys()].map((val) => {
 	return {
 		id: val,
-		name: `hoge${val}`,
+		name: `hoge${val + 1}`,
 		image: "https://source.unsplash.com/TaCk3NspYe0",
-		email: "hoge@example.com",
+		email: `hoge${val + 1}@example.com`,
 		phone: "090-0000-0000",
 		company: {
 			name: "hogehoge company"
